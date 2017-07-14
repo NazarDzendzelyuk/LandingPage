@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!--Reset css-->
+    <link rel="stylesheet" href="css/resetCss.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!--Font awesome-->
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <!--Custom styles-->
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/media.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWDXYWPyGpdekMNedDLlTvswB8ab9WMB8&callback=initMap">
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>up<span>qode</span></h1>
+        </div>
+        <!--BURGER MENU STARTS HERE-->
+        <div class="bg">
+            <button class="hamburger">&#9776;</button>
+            <button class="cross">&#735;</button>
+        </div>
+
+        <div class="menu">
+            <ul>
+                <a href="#home">
+                    <li class="click homeScroll">Home</li>
+                </a>
+                <a href="#prod">
+                    <li class="click productsScroll">Products</li>
+                </a>
+                <a href="#cont">
+                    <li class="click contactsScroll">Contacts</li>
+                </a>
+
+            </ul>
+        </div>
+        <!--BURGER MENU ENDS HERE-->
+        <!--MAIN MENU TILL 1024px-->
+        <nav>
+            <ul class="topmenu">
+                <li><a class="active homeScroll" href="#home">Home</a>
+                </li>
+                <li><a href="#prod" class="productsScroll">Products</a>
+
+                    <ul class="submenu">
+                        <li>Scarf</li>
+                        <li class="submenu-link">Shoes
+                            <ul class="submenu">
+                                <li>Man shoes</li>
+                                <li>Woman shoes </li>
+                                <li>Children shoes</li>
+                            </ul>
+                        </li>
+                        <li>Boots</li>
+                    </ul>
+
+                </li>
+                <li><a href="#cont" class="contactsScroll">Contact</a></li>
+
+            </ul>
+            <input type="search"><a href="#"><span class="glyphicon glyphicon-search search" aria-hidden="true"></span></a>
+        </nav>
+        <!--MAIN MENU END-->
+    </header>
+    <!--SLIDER STARTS HERE-->
+    <section>
+        <div class="slider" id="home">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                    </div>
+                    <div class="item item__one">
+                    </div>
+                    <div class="item item__two">
+                    </div>
+                </div>
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right "></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <div class="slider--banner">
+                <h1>creative <span>design agency</span></h1>
+                <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit <br>non mi porta gravida at eget metus. Curabitur blandit tempus porttitor. </p>
+            </div>
+        </div>
+    </section>
+    <!--SLIDER ENDS HERE-->
+    <section>
+        <div class="chooseUs">
+            <h1>why<span>choose us</span></h1>
+            <p>Quisque fermentum, nisl mattis volutpat rhoncus, tellus est congue nibh, ut euismod quam nisi quis felis. Nullam at scelerisque tellus mattis volutpat rhoncus, </p>
+        </div>
+        <!--hover effect for this elements is in script.js file-->
+        <div id="content">
+            <div class="content--box content--size">
+                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                <div class="content--box__subscription">
+                    <h3>your title</h3>
+                    <p>Duis bibendum diam <br> non erat facilaisis en ter tincidunt. Duis
+                    </p>
+                </div>
+                <div class="content--box--onhover">
+                    <h3><a href="#">see more</a></h3>
+                    <a href="#"><i class="fa fa-arrows" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-search-plus" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="content--box content--size">
+                <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                <div class="content--box__subscription">
+                    <h3>your title</h3>
+                    <p>Duis bibendum diam <br> non erat facilaisis en ter tincidunt. Duis
+                    </p>
+                </div>
+                <div class="content--box--onhover">
+                    <h3><a href="#">see more</a></h3>
+                    <a href="#"><i class="fa fa-arrows" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-search-plus" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="content--box content--size">
+                <i class="fa fa-laptop" aria-hidden="true"></i>
+                <div class="content--box__subscription">
+                    <h3>your title</h3>
+                    <p>Duis bibendum diam <br> non erat facilaisis en ter tincidunt. Duis
+                    </p>
+                </div>
+                <div class="content--box--onhover">
+                    <h3><a href="#">see more</a></h3>
+                    <a href="#"><i class="fa fa-arrows" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-search-plus" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="content--box content--size">
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <div class="content--box__subscription">
+                    <h3>your title</h3>
+                    <p>Duis bibendum diam <br> non erat facilaisis en ter tincidunt. Duis
+                    </p>
+                </div>
+                <div class="content--box--onhover">
+                    <h3><a href="#">see more</a></h3>
+                    <a href="#"><i class="fa fa-arrows" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-search-plus" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="content--box content--size">
+                <i class="fa fa-flag-o" aria-hidden="true"></i>
+                <div class="content--box__subscription">
+                    <h3>your title</h3>
+                    <p>Duis bibendum diam <br> non erat facilaisis en ter tincidunt. Duis
+                    </p>
+                </div>
+                <div class="content--box--onhover">
+                    <h3><a href="#">see more</a></h3>
+                    <a href="#"><i class="fa fa-arrows" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-search-plus" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--SECTION WITH HOVER ENDS-->
+    <!--PRDUCT SECTION-->
+    <section>
+        <div id="prod">
+
+            <div class="first">
+                <h1>our<span>products</span></h1>
+            </div>
+            <div class="products">
+                <div class="container">
+                    <div class="product--box down">
+                        <figure>
+                            <img src="img/Layer%201.png" alt="">
+                        </figure>
+                        <figcaption>
+                            <h1>title</h1>
+                            <h3>Best Product</h3>
+                            <p>Duis bibendum diam non <br> erat facilaisis en ter </p>
+                        </figcaption>
+                    </div>
+                    <div class="product--box middle down">
+                        <figure>
+                            <img src="img/Layer%202.png" alt="">
+                        </figure>
+                        <figcaption>
+                            <h1>title</h1>
+                            <h3>Best Product</h3>
+                            <p>Duis bibendum diam non <br> erat facilaisis en ter </p>
+                        </figcaption>
+                    </div>
+                    <div class="product--box down">
+                        <figure>
+                            <img src="img/Layer%203.png" alt="">
+                        </figure>
+                        <figcaption>
+                            <h1>title</h1>
+                            <h3>Best Product</h3>
+                            <p>Duis bibendum diam non <br> erat facilaisis en ter </p>
+                        </figcaption>
+                    </div>
+                    <div class="product--box">
+                        <figure>
+                            <img src="img/Layer%204.png" alt="">
+                        </figure>
+                        <figcaption>
+                            <h1>title</h1>
+                            <h3>Best Product</h3>
+                            <p>Duis bibendum diam non <br> erat facilaisis en ter </p>
+                        </figcaption>
+                    </div>
+                    <div class="product--box secondMiddle">
+                        <figure>
+                            <img src="img/Layer%205.png" alt="">
+                        </figure>
+                        <figcaption>
+                            <h1>title</h1>
+                            <h3>Best Product</h3>
+                            <p>Duis bibendum diam non <br> erat facilaisis en ter </p>
+                        </figcaption>
+                    </div>
+                    <div class="product--box">
+                        <figure>
+                            <img src="img/Layer%206.png" alt="">
+                        </figure>
+                        <figcaption>
+                            <h1>title</h1>
+                            <h3>Best Product</h3>
+                            <p>Duis bibendum diam non <br> erat facilaisis en ter </p>
+                        </figcaption>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <!--END OF THE PRODECT SECTION-->
+    </section>
+    <section>
+        <footer>
+            <div class="devider"></div>
+            <div class="wrapForContacts" id="cont">
+                <div class="getInTouch">
+                    <h1>get in<span>touch</span></h1>
+                    <p>Quisque fermentum, nisl mattis volutpat rhoncus, tellus est congue nibh, ut euismod quam nisi quis felis. <br> Nullam at scelerisque tellus mattis volutpat rhoncus,</p>
+                </div>
+                <div id="googlemaps">
+
+                </div>
+                <div id="contactform">
+                    <div class="contactform--inform">
+                        <form>
+                            <input type="text" placeholder="Full Name" required>
+                            <input type="email" placeholder="E-mail Address" required><br><br>
+
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea><br><br>
+                            <label><input type="checkbox"> I like your company</label>
+                            <input type="submit" value="Send">
+                        </form>
+                    </div>
+                    <div class="contactform--address">
+                        <p>69/A, Some Street Lviv/New York, code 01234 Ukraine/USA</p>
+                        <p>+1 646.490.0652 <br> +380 930.008.893</p>
+                        <p> valentin@upqode.com natalia@upqode.com
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="underMap">
+                <div class="underMapLeft">
+                    <p>Copyright © Company. All Rights Reserved 2016</p>
+                </div>
+                <div class="underMapRight">
+                    <a href=""><img src="img/facebook_S.png" alt=""></a>
+                    <a href=""><img src="img/googleplus_S.png" alt=""></a>
+                    <a href=""><img src="img/twitter_S1.png" alt=""></a>
+                    <a href=""><img src="img/dribbble_S.png" alt=""></a>
+                </div>
+            </div>
+        </footer>
+    </section>
+        <script src="https://maps.googleapis.com/maps/api/js?"></script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.js"></script>
+    <!--CUSTOM FILE JS-->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
